@@ -7,14 +7,13 @@ Summary: A showcase app to demo native iOS app with RHMAP.
 Community Project : [Feed Henry](http://feedhenry.org)
 Target Product: RHMAP  
 Product Versions: RHMAP 3.9.0+   
-Source: https://github.com/feedhenry-templates/welcome-ios   
+Source: https://github.com/feedhenry-templates/welcome-ios  
 Prerequisites: fh-ios-sdk : 3.+, Xcode : 7.2+, iOS SDK : iOS7+, CocoaPods: 0.39+
 
 ## What is it?
 
-A native iOS template for rapid development using RHMAP. The template uses UI elements like the [Navigation Drawer](), the Action Bar and Fragments.
+A native iOS template for rapid development using RHMAP. The template uses UI libs like the [SWRevealViewController](https://github.com/John-Lluch/SWRevealViewController) to have facebook like hamburger menu to demo [iOS FeedHenry SDK](https://github.com/feedhenry/fh-ios-sdk) features:
 
-The [iOS FeedHenry SDK]() is used to:
 - perform cloud calls, 
 - store data in the cloud using Mongo DB
 - use a third party API to get location based weather data. 
@@ -42,5 +41,3 @@ If you wish to contribute to this template, the following information may be hel
 
 4. Open welcome-ios.xcworkspace
 
-5. Run the project
- 
