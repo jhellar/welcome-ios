@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   fhconfig.plist
+   welcome-ios
+
+   Created by Daniel Passos on 3/16/16.
+   Copyright (c) 2016 Red Hat. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+        <key>host</key>
+        <string>replace me</string>
+        <key>appid</key>
+        <string>replace me</string>
+        <key>projectid</key>
+        <string>replace me</string>
+        <key>appkey</key>
+        <string>replace me</string>
+        <key>connectiontag</key>
+        <string>replace me</string>
+    </dict>
+</plist>
