@@ -1,4 +1,5 @@
 #import "AppDelegate.h"
+#import "FH.h"
 
 @interface AppDelegate ()
 
@@ -9,6 +10,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // Initialized cloud connection
+    [FH initWithSuccess:^(FHResponse *response) {
+        NSLog(@"initialized OK");
+    } AndFailure:^(FHResponse *response) {
+        NSLog(@"initialize fail, %@", response.rawResponseAsString);
+    }];
+    
     return YES;
 }
 
