@@ -10,14 +10,14 @@
 <plist version="1.0">
     <dict>
         <key>host</key>
-        <string>replace me</string>
+        <string>replaceme</string>
         <key>appid</key>
-        <string>replace me</string>
+        <string>replaceme</string>
         <key>projectid</key>
-        <string>replace me</string>
+        <string>replaceme</string>
         <key>appkey</key>
-        <string>replace me</string>
+        <string>replaceme</string>
         <key>connectiontag</key>
-        <string>replace me</string>
+        <string>replaceme</string>
     </dict>
 </plist>
