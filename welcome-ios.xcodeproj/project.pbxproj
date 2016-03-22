@@ -78,7 +78,7 @@
 		8A3BC6A01C60E5B8009792FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A3BC6A21C60E5B8009792FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A3BC6A51C60E5B8009792FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8A3BC6A71C60E5B8009792FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A3BC6A71C60E5B8009792FB /* welcome-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "welcome-ios-Info.plist"; sourceTree = "<group>"; };
 		8A3BC6AC1C60E5B8009792FB /* welcome-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "welcome-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A3BC6B01C60E5B8009792FB /* welcome_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = welcome_iosTests.m; sourceTree = "<group>"; };
 		8A3BC6B21C60E5B8009792FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -218,7 +218,7 @@
 				8A66DAF31C638BB000AF9FCC /* StatisticsViewController.h */,
 				8A66DAF41C638BB000AF9FCC /* StatisticsViewController.m */,
 				8A3BC6A21C60E5B8009792FB /* Assets.xcassets */,
-				8A3BC6A71C60E5B8009792FB /* Info.plist */,
+				8A3BC6A71C60E5B8009792FB /* welcome-ios-Info.plist */,
 				8A3BC6961C60E5B8009792FB /* Supporting Files */,
 				8A8F9CB81C99D21400BF273B /* fhconfig.plist */,
 			);
@@ -643,7 +643,7 @@
 			baseConfigurationReference = FA663524E4341FF2F39871FC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "welcome-ios/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/welcome-ios/welcome-ios-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.feedhenry.welcome-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -655,7 +655,7 @@
 			baseConfigurationReference = D01BCB111B0D4F872D2C8439 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "welcome-ios/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/welcome-ios/welcome-ios-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.feedhenry.welcome-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
