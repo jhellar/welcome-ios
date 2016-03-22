@@ -643,7 +643,7 @@
 			baseConfigurationReference = FA663524E4341FF2F39871FC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "welcome-ios/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/welcome-ios/welcome-ios-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.feedhenry.welcome-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -655,7 +655,7 @@
 			baseConfigurationReference = D01BCB111B0D4F872D2C8439 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "welcome-ios/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/welcome-ios/welcome-ios-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.feedhenry.welcome-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
