@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Reveal View Controller-->
@@ -551,58 +552,138 @@
             <objects>
                 <viewController id="Fh2-NA-Hgq" customClass="CloudIntegrationsViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VQy-9k-w32"/>
-                        <viewControllerLayoutGuide type="bottom" id="GQC-O8-ET9"/>
+                        <viewControllerLayoutGuide type="top" id="7tm-nH-9Zj"/>
+                        <viewControllerLayoutGuide type="bottom" id="zf3-KF-GCq"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aw7-ea-GfG">
+                    <view key="view" contentMode="scaleToFill" id="SGe-kn-YhR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anr-bd-jbu">
-                                <rect key="frame" x="9" y="72" width="397" height="100"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nA2-aq-s95">
+                                <rect key="frame" x="20" y="79" width="374" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="4cw-Fh-VaV"/>
+                                </constraints>
                                 <string key="text">You can easily integrate with all of your existing back-end systems using Cloud Plugins. Check out the App Studio to see how to connect to Databases, Messaging, Analytics, SaaS, eCommerce, Logging, Data Storage, Testing Tools and File Storage. A few examples including</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_mysql.png" translatesAutoresizingMaskIntoConstraints="NO" id="ufF-KX-y0M">
-                                <rect key="frame" x="28" y="196" width="103" height="111"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plugins_mysql" translatesAutoresizingMaskIntoConstraints="NO" id="Chh-J1-TyB">
+                                <rect key="frame" x="26" y="215" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="dvA-38-DBF"/>
+                                    <constraint firstAttribute="width" constant="70" id="dvi-kc-IeE"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_paypal.png" translatesAutoresizingMaskIntoConstraints="NO" id="d4P-fB-keq">
-                                <rect key="frame" x="286" y="436" width="110" height="119"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plugins_loggly" translatesAutoresizingMaskIntoConstraints="NO" id="y3u-dc-Rsy">
+                                <rect key="frame" x="26" y="310" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="fDf-4q-TFR"/>
+                                    <constraint firstAttribute="width" constant="70" id="wBZ-FJ-aHF"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_loggly.png" translatesAutoresizingMaskIntoConstraints="NO" id="DsZ-Fh-JnH">
-                                <rect key="frame" x="24" y="324" width="88" height="111"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plugins_s3" translatesAutoresizingMaskIntoConstraints="NO" id="mXm-K1-aQX">
+                                <rect key="frame" x="172" y="310" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Vig-Sc-6mQ"/>
+                                    <constraint firstAttribute="height" constant="70" id="WGx-mk-VQ1"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_oracle.png" translatesAutoresizingMaskIntoConstraints="NO" id="bEM-Kf-gxr">
-                                <rect key="frame" x="145" y="188" width="107" height="117"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plugins_mixpanel" translatesAutoresizingMaskIntoConstraints="NO" id="VbN-Rv-c47">
+                                <rect key="frame" x="324" y="310" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="bXK-IB-Ybj"/>
+                                    <constraint firstAttribute="height" constant="70" id="oRP-2x-oE3"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_s3.png" translatesAutoresizingMaskIntoConstraints="NO" id="OdM-GE-Xwc">
-                                <rect key="frame" x="157" y="324" width="101" height="110"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plugins_oracle" translatesAutoresizingMaskIntoConstraints="NO" id="sYl-la-9KL">
+                                <rect key="frame" x="172" y="215" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="PNd-xo-ZnN"/>
+                                    <constraint firstAttribute="height" constant="70" id="bup-5A-z60"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_mixpanel.png" translatesAutoresizingMaskIntoConstraints="NO" id="dZ1-O2-PAb">
-                                <rect key="frame" x="281" y="314" width="119" height="129"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plugins_stripe" translatesAutoresizingMaskIntoConstraints="NO" id="Gyh-IK-e4u">
+                                <rect key="frame" x="324" y="215" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="PDD-wS-gHy"/>
+                                    <constraint firstAttribute="width" constant="70" id="Sea-WO-1rY"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_stripe.png" translatesAutoresizingMaskIntoConstraints="NO" id="XOl-DY-8ct">
-                                <rect key="frame" x="282" y="188" width="118" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plugins_salesforce" translatesAutoresizingMaskIntoConstraints="NO" id="haN-aq-a9S">
+                                <rect key="frame" x="20" y="409" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="2Ub-U6-1gF"/>
+                                    <constraint firstAttribute="height" constant="70" id="fIe-Ce-ruw"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_sendgrid.png" translatesAutoresizingMaskIntoConstraints="NO" id="flS-mb-84E">
-                                <rect key="frame" x="157" y="441" width="101" height="109"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plugins_rabbitmq" translatesAutoresizingMaskIntoConstraints="NO" id="8b8-5j-i9l">
+                                <rect key="frame" x="20" y="505" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="fdX-5l-kc6"/>
+                                    <constraint firstAttribute="height" constant="70" id="p9o-cs-BXg"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_rabbitmq.png" translatesAutoresizingMaskIntoConstraints="NO" id="LGn-5Q-0oL">
-                                <rect key="frame" x="20" y="568" width="118" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plugins_sendgrid" translatesAutoresizingMaskIntoConstraints="NO" id="jin-UJ-u6s">
+                                <rect key="frame" x="172" y="405" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="D04-D8-JoL"/>
+                                    <constraint firstAttribute="width" constant="70" id="Rpa-75-muK"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_postgresql.png" translatesAutoresizingMaskIntoConstraints="NO" id="EdV-eg-EBE">
-                                <rect key="frame" x="152" y="572" width="111" height="120"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plugins_postgresql" translatesAutoresizingMaskIntoConstraints="NO" id="aNO-Tu-7vP">
+                                <rect key="frame" x="172" y="505" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="K3t-B5-riM"/>
+                                    <constraint firstAttribute="height" constant="70" id="um1-FN-zNX"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_salesforce.png" translatesAutoresizingMaskIntoConstraints="NO" id="Egm-us-1a7">
-                                <rect key="frame" x="20" y="452" width="111" height="87"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plugins_paypal" translatesAutoresizingMaskIntoConstraints="NO" id="UQd-Sj-zSn">
+                                <rect key="frame" x="324" y="405" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="EQz-tW-mvj"/>
+                                    <constraint firstAttribute="width" constant="70" id="TiG-HX-aVW"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_twilio.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vhh-Ci-arJ">
-                                <rect key="frame" x="291" y="578" width="100" height="108"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plugins_twilio" translatesAutoresizingMaskIntoConstraints="NO" id="iQh-b2-imz">
+                                <rect key="frame" x="324" y="500" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="GFu-gS-2zD"/>
+                                    <constraint firstAttribute="width" constant="70" id="zrW-u9-qOY"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nA2-aq-s95" firstAttribute="top" secondItem="7tm-nH-9Zj" secondAttribute="bottom" constant="15" id="30j-L3-xbk"/>
+                            <constraint firstItem="8b8-5j-i9l" firstAttribute="top" secondItem="haN-aq-a9S" secondAttribute="bottom" constant="26" id="4Cp-iv-hso"/>
+                            <constraint firstItem="UQd-Sj-zSn" firstAttribute="top" secondItem="VbN-Rv-c47" secondAttribute="bottom" constant="25" id="6VY-b9-RhW"/>
+                            <constraint firstItem="Chh-J1-TyB" firstAttribute="top" secondItem="nA2-aq-s95" secondAttribute="bottom" constant="8" id="7Q2-BB-cIO"/>
+                            <constraint firstItem="haN-aq-a9S" firstAttribute="top" secondItem="y3u-dc-Rsy" secondAttribute="bottom" constant="29" id="A0B-EP-PsL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UQd-Sj-zSn" secondAttribute="trailing" id="B7P-of-czF"/>
+                            <constraint firstItem="Chh-J1-TyB" firstAttribute="leading" secondItem="SGe-kn-YhR" secondAttribute="leadingMargin" constant="6" id="DVJ-pc-Q35"/>
+                            <constraint firstItem="aNO-Tu-7vP" firstAttribute="top" secondItem="jin-UJ-u6s" secondAttribute="bottom" constant="30" id="DlI-iR-qHC"/>
+                            <constraint firstItem="sYl-la-9KL" firstAttribute="top" secondItem="Gyh-IK-e4u" secondAttribute="top" id="E2I-1V-mVG"/>
+                            <constraint firstItem="sYl-la-9KL" firstAttribute="centerX" secondItem="SGe-kn-YhR" secondAttribute="centerX" id="I2j-8R-reu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gyh-IK-e4u" secondAttribute="trailing" id="IPf-ft-rrq"/>
+                            <constraint firstItem="mXm-K1-aQX" firstAttribute="top" secondItem="sYl-la-9KL" secondAttribute="bottom" constant="25" id="Ixt-mh-68R"/>
+                            <constraint firstItem="y3u-dc-Rsy" firstAttribute="leading" secondItem="SGe-kn-YhR" secondAttribute="leadingMargin" constant="6" id="Jdh-zO-ZUb"/>
+                            <constraint firstItem="Gyh-IK-e4u" firstAttribute="centerY" secondItem="Chh-J1-TyB" secondAttribute="centerY" id="Kef-Zn-bTm"/>
+                            <constraint firstItem="VbN-Rv-c47" firstAttribute="top" secondItem="Gyh-IK-e4u" secondAttribute="bottom" constant="25" id="QIa-Bf-MrA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iQh-b2-imz" secondAttribute="trailing" id="SMA-Jo-XSd"/>
+                            <constraint firstItem="y3u-dc-Rsy" firstAttribute="top" secondItem="Chh-J1-TyB" secondAttribute="bottom" constant="25" id="SVm-s2-hr6"/>
+                            <constraint firstItem="iQh-b2-imz" firstAttribute="top" secondItem="UQd-Sj-zSn" secondAttribute="bottom" constant="25" id="Sa1-IS-Yuk"/>
+                            <constraint firstItem="nA2-aq-s95" firstAttribute="leading" secondItem="SGe-kn-YhR" secondAttribute="leadingMargin" id="Sej-WV-QMv"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="8b8-5j-i9l" secondAttribute="leading" id="W7X-mb-y1u"/>
+                            <constraint firstItem="nA2-aq-s95" firstAttribute="trailing" secondItem="SGe-kn-YhR" secondAttribute="trailingMargin" id="Wfp-cg-zbo"/>
+                            <constraint firstItem="jin-UJ-u6s" firstAttribute="centerX" secondItem="mXm-K1-aQX" secondAttribute="centerX" id="bNS-OW-sxl"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="haN-aq-a9S" secondAttribute="leading" id="gRf-mG-2Tf"/>
+                            <constraint firstItem="mXm-K1-aQX" firstAttribute="centerX" secondItem="sYl-la-9KL" secondAttribute="centerX" id="kte-0O-rpq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VbN-Rv-c47" secondAttribute="trailing" id="n8E-PU-wH8"/>
+                            <constraint firstItem="jin-UJ-u6s" firstAttribute="top" secondItem="mXm-K1-aQX" secondAttribute="bottom" constant="25" id="sQe-f9-xDd"/>
+                            <constraint firstItem="aNO-Tu-7vP" firstAttribute="centerX" secondItem="jin-UJ-u6s" secondAttribute="centerX" id="sbP-9J-CNv"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Cloud Integration" id="fR8-Ma-TEt">
                         <barButtonItem key="leftBarButtonItem" image="menu.png" id="JZk-wu-k6i"/>
@@ -939,18 +1020,18 @@
         <image name="ic_push.png" width="36" height="36"/>
         <image name="ic_statistics.png" width="36" height="36"/>
         <image name="menu.png" width="28" height="20"/>
-        <image name="plugins_loggly.png" width="125" height="125"/>
-        <image name="plugins_mixpanel.png" width="125" height="125"/>
-        <image name="plugins_mysql.png" width="117" height="125"/>
-        <image name="plugins_oracle.png" width="111" height="125"/>
-        <image name="plugins_paypal.png" width="125" height="125"/>
-        <image name="plugins_postgresql.png" width="117" height="125"/>
-        <image name="plugins_rabbitmq.png" width="117" height="125"/>
-        <image name="plugins_s3.png" width="117" height="125"/>
-        <image name="plugins_salesforce.png" width="159" height="125"/>
-        <image name="plugins_sendgrid.png" width="171" height="125"/>
-        <image name="plugins_stripe.png" width="125" height="125"/>
-        <image name="plugins_twilio.png" width="88" height="125"/>
+        <image name="plugins_loggly" width="125" height="125"/>
+        <image name="plugins_mixpanel" width="125" height="125"/>
+        <image name="plugins_mysql" width="117" height="125"/>
+        <image name="plugins_oracle" width="111" height="125"/>
+        <image name="plugins_paypal" width="125" height="125"/>
+        <image name="plugins_postgresql" width="117" height="125"/>
+        <image name="plugins_rabbitmq" width="117" height="125"/>
+        <image name="plugins_s3" width="117" height="125"/>
+        <image name="plugins_salesforce" width="159" height="125"/>
+        <image name="plugins_sendgrid" width="171" height="125"/>
+        <image name="plugins_stripe" width="125" height="125"/>
+        <image name="plugins_twilio" width="88" height="125"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dLY-co-wpf"/>
