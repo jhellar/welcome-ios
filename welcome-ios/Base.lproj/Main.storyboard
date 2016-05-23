@@ -409,31 +409,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6h-Rr-UYB">
-                                <rect key="frame" x="9" y="72" width="397" height="67"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6h-Rr-UYB">
+                                <rect key="frame" x="20" y="64" width="374" height="67"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="qQs-Rg-NZq"/>
+                                </constraints>
                                 <string key="text">First go to the Data Browser menu in your cloud code in the Studio and enable it. Then enter your name here and tap the button to save your name in our cloud database.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nP0-A4-5hz">
-                                <rect key="frame" x="9" y="183" width="397" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nP0-A4-5hz">
+                                <rect key="frame" x="20" y="177" width="374" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="callCloud:" destination="cic-Oy-OLm" eventType="touchUpInside" id="Rjm-h4-Lyx"/>
                                     <action selector="saveData:" destination="UCK-2C-ScY" eventType="touchUpInside" id="1vv-2u-OVT"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HSS-un-2ZI">
-                                <rect key="frame" x="9" y="145" width="397" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HSS-un-2ZI">
+                                <rect key="frame" x="20" y="139" width="374" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="E09-Co-6qA">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="E09-Co-6qA">
                                 <rect key="frame" x="197" y="358" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nP0-A4-5hz" firstAttribute="leading" secondItem="q6c-IX-yC5" secondAttribute="leadingMargin" id="2a5-iy-i9n"/>
+                            <constraint firstItem="HSS-un-2ZI" firstAttribute="top" secondItem="q6h-Rr-UYB" secondAttribute="bottom" constant="8" symbolic="YES" id="BHQ-EC-92C"/>
+                            <constraint firstItem="nP0-A4-5hz" firstAttribute="top" secondItem="HSS-un-2ZI" secondAttribute="bottom" constant="8" symbolic="YES" id="KDF-HO-0en"/>
+                            <constraint firstItem="E09-Co-6qA" firstAttribute="centerX" secondItem="q6c-IX-yC5" secondAttribute="centerX" id="Mww-YH-M2J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q6h-Rr-UYB" secondAttribute="trailing" id="XF0-HF-au5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nP0-A4-5hz" secondAttribute="trailing" id="jdG-ii-rBU"/>
+                            <constraint firstItem="q6h-Rr-UYB" firstAttribute="top" secondItem="syf-ai-3IC" secondAttribute="bottom" id="jwQ-SH-Qvl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HSS-un-2ZI" secondAttribute="trailing" id="mxp-UA-g8T"/>
+                            <constraint firstItem="E09-Co-6qA" firstAttribute="centerY" secondItem="q6c-IX-yC5" secondAttribute="centerY" id="nfl-l4-kfW"/>
+                            <constraint firstItem="HSS-un-2ZI" firstAttribute="leading" secondItem="q6c-IX-yC5" secondAttribute="leadingMargin" id="o7l-p3-lM2"/>
+                            <constraint firstItem="q6h-Rr-UYB" firstAttribute="leading" secondItem="q6c-IX-yC5" secondAttribute="leadingMargin" id="tFm-2j-aY6"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Data Browser" id="pli-Bm-DmP">
                         <barButtonItem key="leftBarButtonItem" image="menu.png" id="3XP-K8-daF"/>
