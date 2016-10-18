@@ -1,5 +1,7 @@
 # welcome-ios [![Build Status](https://travis-ci.org/feedhenry-templates/welcome-ios.png)](https://travis-ci.org/feedhenry-templates/welcome-ios)
 
+> Swift version is available [here](https://github.com/feedhenry-templates/welcome-ios-swift).
+
 Author: Daniel Passos   
 Level: Intermediate  
 Technologies: Objective-C, iOS, RHMAP, CocoaPods.
@@ -34,10 +36,7 @@ If you wish to contribute to this template, the following information may be hel
 ## Build instructions
 
 1. Clone this project
-
-2. Populate ```welcome-ios/fhconfig.plist``` with your values as explained [here](http://docs.feedhenry.com/v3/dev_tools/sdks/ios.html#ios-configure).
-
-3. Run ```pod install``` 
-
-4. Open welcome-ios.xcworkspace
+1. Populate ```welcome-ios/fhconfig.plist``` with your values as explained [here](http://docs.feedhenry.com/v3/dev_tools/sdks/ios.html#ios-configure).
+1. Run ```pod install``` 
+1. Open welcome-ios.xcworkspace
 
